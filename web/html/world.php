@@ -17,8 +17,8 @@
 <h1>The World</h1>
 <?php
     // get sort parameters
-    $sort = $_GET['sort'] ?? 'Name';
-    $dir = $_GET['dir'] ?? 'ASC';
+    $sort = isset($_GET['sort']) ? $_GET['sort'] : 'Name';
+    $dir = isset($_GET['dir']) ? $_GET['dir'] : 'ASC';
 
     // build query, test in phpMyAdmin first
     $query = "SELECT 
