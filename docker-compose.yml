@@ -10,7 +10,7 @@ services:
       # - db:/var/lib/mysql
       # local volumes
       #- ./conf/mysql:/etc/mysql/conf.d
-      #- ./db/data:/var/lib/mysql
+      - ./db/data:/var/lib/mysql
       - ./db/init:/docker-entrypoint-initdb.d
     environment:
       MYSQL_ROOT_PASSWORD: "supersecret"
