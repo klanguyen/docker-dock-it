@@ -22,7 +22,6 @@
     <div class="text-center sticky-top shadow-lg p-2 w-100 text-light bg-black">
         <h1>Dock It</h1>
         <a href="phpinfo.php" target="content_frame" class="px-2">PHP Info</a> |
-        <a href="world.php" target="content_frame" class="px-2">The World</a> |
         <a href="funflix.php" target="content_frame" class="px-2">PHP Final</a>
     </div>
     <iframe src="phpinfo.php" name="content_frame" class="w-100 flex-grow-1 border-0"></iframe>
