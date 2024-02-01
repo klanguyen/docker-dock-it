@@ -1,0 +1,309 @@
+html,body{
+    background-color: #17161D;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+    -webkit-appearance:none;
+}
+
+nav {
+    background-color: #171d22;
+}
+
+nav a:link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #f7f7ff;
+}
+
+nav a:hover{
+    color: #E4D806;
+}
+
+nav .pagination{
+    background-color: #17161D;
+}
+nav ul {
+    color: #E4D806;
+}
+
+h2, h1 {
+    font-weight: bold;
+    color: #f7f7ff;
+}
+
+/*--------------------------------------------------------------
+# Carousel
+--------------------------------------------------------------*/
+.carousel-img{
+    width: 1200px;
+    height: 500px;
+    object-fit: cover;
+}
+.carousel-caption{
+    opacity: 0;
+}
+.carousel-item:hover img{
+    opacity: 0.3;
+}
+.carousel-item:hover .carousel-caption{
+    opacity: 1;
+}
+
+.ghost-button{
+    display: inline-block;
+    width: 200px;
+    padding: 8px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+}
+.ghost-button:hover,
+.ghost-button:active {
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+    background: #171d22;
+    padding: 0 0 30px 0;
+    color: #E4D806;
+    font-size: 14px;
+}
+
+#footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+}
+
+#footer .credits {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#footer .credits a {
+    color: rgba(255, 255, 255, 0.6);
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+#footer .credits a:hover {
+    color: white;
+}
+
+/*--------------------------------------------------------------
+# Index page
+--------------------------------------------------------------*/
+.index-style{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/index-banner.jpg');
+}
+
+.index-style p{
+    color: #f7f7ff;
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.section-bg, .services .icon-box {
+    background-color: #f8f9fa;
+}
+
+.section-title {
+    padding-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    font-family: "Poppins", sans-serif;
+}
+
+.section-title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #e6636a;
+    margin: 4px 10px;
+}
+
+.section-title p {
+    margin: 0;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #556270;
+}
+
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+    padding: 18px 0;
+    background: #17161D;
+    min-height: 40px;
+    margin-top: 80px;
+}
+
+.breadcrumbs h2 {
+    font-size: 32px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+.breadcrumbs ol li + li {
+    padding-left: 10px;
+}
+
+.breadcrumbs ol li + li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: #6b7b8d;
+    content: "/";
+}
+
+@media (max-width: 992px) {
+    .breadcrumbs {
+        margin-top: 58px;
+    }
+    .breadcrumbs .d-flex {
+        display: block !important;
+    }
+    .breadcrumbs h2 {
+        margin-bottom: 10px;
+    }
+    .breadcrumbs ol {
+        display: block;
+    }
+    .breadcrumbs ol li {
+        display: inline-block;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Movie card
+--------------------------------------------------------------*/
+img {
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+img {
+    pointer-events: none;
+}
+.movie_card{
+    padding: 0 !important;
+    width: 22rem;
+    margin:14px;
+    border-radius: 10px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+}
+
+.movie_card a:link {
+    text-decoration: none;
+    color: #17161D;
+}
+.movie_card a:hover{
+    text-decoration: none;
+    color: #E4D806;
+}
+.movie_card a:visited {
+    text-decoration: none;
+    color: #17161D;
+}
+
+.movie_card img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 25rem;
+}
+.movie_info{
+    color: #5e5c5c;
+}
+
+.movie_info i{
+    font-size: 20px;
+}
+.card-title{
+    width: 80%;
+    height: 3rem;
+}
+.play_button{
+    background-color: #E4D806;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    right: 20px;
+    bottom: 111px;
+    font-size: 27px;
+    padding-left: 21px;
+    padding-top: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/*--------------------------------------------------------------
+# Movie page
+--------------------------------------------------------------*/
+.movie_page h1{
+    color: #E4D806;
+}
+
+.movie_page .info_header{
+    color: #E4D806;
+}
+
+.movie_page p, li{
+    color: #f7f7ff;
+}
+
+/*--------------------------------------------------------------
+# Add page
+--------------------------------------------------------------*/
+label {
+    color: #E4D806;
+    font-weight: bold;
+}
+
+/*--------------------------------------------------------------
+# Delete page
+--------------------------------------------------------------*/
+.delete-page p {
+    color: #f7f7ff; !important;
+}
