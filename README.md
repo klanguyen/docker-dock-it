@@ -17,12 +17,12 @@ docker compose up -d
 
 ## Install and activate plugins
 ```shell
-docker exec -it docker-dock-it-wpcli-1 bash -c " 
+docker exec -it docker-dock-it-wp-author-lab-wpcli-1 bash -c " 
 wp plugin delete hello akismet ; 
-wp plugin install health-check query-monitor loco-translate blockart-blocks everest-forms --activate ;  
+wp plugin install health-check query-monitor loco-translate wp-adverts --activate ;  
 wp plugin activate mailhog ;
-wp theme activate zakra ;
-wp theme delete twentytwenty twentytwentyone ;"
+wp theme activate wpd_understrap_child ;
+wp theme delete twentytwenty twentytwentyone twentytwentytwo ;"
 ```
 
 ### WordPress
@@ -37,12 +37,19 @@ wp theme delete twentytwenty twentytwentyone ;"
 ## WP CLI
 You can run a single command:
 ```shell
-docker exec -it docker-dock-it-wpcli-1 wp user list
+docker exec -it docker-dock-it-wp-author-lab-wpcli-1 wp user list
 ```
 or login via the terminal:
 ```shell
-docker exec -it docker-dock-it-wpcli-1 bash
+docker exec -it docker-dock-it-wp-author-lab-wpcli-1 bash
 ```
+
+## Demo
+You can use the website using this demo account:
+
+Username: demouser
+
+Password: password
 
 ## Todo
 1. Test the site with different versions of PHP/WP.
