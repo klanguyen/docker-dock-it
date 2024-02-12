@@ -1,0 +1,477 @@
+/*
+Theme Name: WPD Understrap Child Theme
+Template: understrap
+Author: Kayla Nguyen
+Description: A Understrap child theme made for WPD class
+Version: 1.2.2
+Tested up to: 6.1
+Requires PHP: 5.2
+License: GNU General Public License v3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: wpd-understrap-child
+*/
+
+:root {
+    --primary-blue:#0f63cb;
+    --the-yellow: #f7eb06;
+    --heading-color: #334199;
+    --p-text-color: #101a60;
+}
+
+@font-face {
+    font-family: 'FFTisaPro';
+    src: url('fonts/FFTisa/TisaPro-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AzoSans';
+    src: url('fonts/AzoSans/AzoSans-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AzoSans';
+    src: url('fonts/AzoSans/AzoSans-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AzoSans';
+    src: url('fonts/AzoSans/AzoSans-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.bg-primary {
+    background-color: var(--primary-blue) !important;
+}
+
+.navbar-brand {
+    font-family: 'Caveat', cursive;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.wrapper a {
+    font-family: 'AzoSans', sans-serif;
+    color: var(--p-text-color);
+    text-decoration: underline;
+}
+
+.wrapper a:hover {
+    color: var(--p-text-color);
+    background-color: #f5d30f;
+}
+
+select {
+    font-family: 'FontAwesome';
+    font-weight: 900;
+}
+
+body, p {
+    font-family: 'FFTisaPro', serif;
+    font-size: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'AzoSans', sans-serif;
+    font-weight: 700;
+}
+
+h3, h4, h5, h6 {
+    color: var(--heading-color);
+}
+
+.navbar {
+    border-bottom: 3px solid #f5d30f;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-family: 'AzoSans', sans-serif;
+    font-weight: 200;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--the-yellow);
+}
+
+body {
+    background-color: #fff;
+}
+
+p {
+    color: var(--p-text-color);
+}
+
+.dropdown-menu {
+    color: var(--primary-blue);
+    border: 1px solid rgba(0, 0, 0, .15);
+}
+
+.dropdown-item {
+    color: var(--primary-blue);
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #263387;
+    background-color: #f5d30f;
+}
+
+#secondary img, article img, figure, img, img.wp-post-image {
+    box-shadow: rgba(0, 0, 0, 0.3) 15px 15px 20px 0px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    width: 300px;
+    align-content: center;
+}
+
+.entry-header {
+    color: var(--primary-blue);
+    text-align: center;
+}
+
+/* Single book */
+
+.book-description {
+    font-size: 1.3em;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid var(--the-yellow);
+}
+
+.avg-rating {
+    text-align: center;
+}
+
+.purchase-link {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.book-meta {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid var(--the-yellow);
+}
+
+.book-meta h4 {
+    color: var(--heading-color);
+}
+
+.book-reviews {
+    list-style: none;
+}
+
+.book-reviews li {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.blockquote p:before {
+    content: open-quote;
+    font-weight: bold;
+}
+
+.blockquote p:after {
+    content: close-quote;
+    font-weight: bold;
+}
+
+.blockquote {
+    margin-bottom: 2px;
+}
+
+.book-reviews .blockquote-footer{
+    color: var(--p-text-color);
+    font-family: 'AzoSans', sans-serif;
+}
+
+.blockquote-footer strong {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.nav-links {
+    padding-top: 10px;
+}
+
+/* Review block */
+
+.review-block {
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+    width: 500px;
+    background-color: #ffd633;
+    padding: 10px 20px;
+    margin-bottom: 1rem;
+}
+
+.review-block .blockquote-footer {
+    color: var(--p-text-color);
+    font-family: 'AzoSans', sans-serif;
+}
+
+.review-block .blockquote-footer strong {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.review-block a:hover {
+    background-color: #fff
+}
+
+/* Front page */
+
+.front-page-hero {
+    background-image: url('img/JohnGreen.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 750px;
+    height: 70vh;
+    max-height: 1000px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-block: 100px;
+}
+
+.front-page-hero a {
+    margin-bottom: 1em;
+}
+
+.front-page-hero h1 {
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: var(--the-yellow);
+    color: var(--p-text-color);
+    border-color: var(--the-yellow);
+}
+
+.btn-primary:hover {
+    background-color: #d7cb06;
+    border-color: #d7cb06;
+    color: var(--p-text-color);
+}
+
+.btn-secondary {
+    color: #fff;
+    border-color: var(--primary-blue);
+    background-color: var(--primary-blue);
+}
+
+.btn-secondary:hover {
+    color: #fff;
+    border-color: #0b4791;
+    background-color: #0b4791;
+}
+
+/* Most Recent Books Widget */
+
+.widget {
+    border-bottom: 3px solid var(--the-yellow);
+    margin-bottom: 1rem;
+}
+
+#block-14 img {
+    width: 100px;
+}
+
+#block-14 {
+    text-align: center;
+}
+
+#block-14 h3 {
+    text-align: left;
+    color: var(--heading-color);
+}
+
+.recent-book-item {
+    padding-top: 15px;
+}
+
+.grow img{
+    transition: 1s ease;
+}
+
+.grow img:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+
+/* Footer */
+#wrapper-footer-full {
+    background-color: var(--primary-blue);
+    color: #fff;
+}
+
+#wrapper-footer-full h3{
+    color: var(--the-yellow);
+}
+
+#wrapper-footer-full ul li a{
+    color: #fff;
+}
+
+#wrapper-footer-full ul li a:hover{
+    color: var(--p-text-color);
+}
+
+.social-media a {
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    background: none;
+}
+
+.social-icon{
+    display: inline-block;
+    margin: 0 5px;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    color: var(--primary-blue);
+    border-radius: 50%;
+    border: 1px solid var(--the-yellow);
+    background-color: var(--the-yellow);
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.social-icon:hover{
+    color: #fff;
+    background-color: var(--p-text-color);
+    border: 1px solid var(--p-text-color);
+}
+
+.social-icon:before{
+    border-left: 20px solid rgba(0, 0, 0, 0);
+    border-right: 20px solid rgba(0, 0, 0, 0);
+    top: -10px;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+}
+
+.social-icon:after {
+    border-left: 20px solid rgba(0, 0, 0, 0);
+    border-right: 20px solid rgba(0, 0, 0, 0);
+    bottom: -10px;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+}
+
+.social-icon i{
+    margin-left: 4px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+/* Bio page */
+.bio-highlight, .contact-highlight {
+    font-size: 1.2em;
+    color: #5c67ad;
+}
+
+/* Archive pages */
+.page-header h1 {
+    color: var(--primary-blue);
+    text-align: center;
+}
+
+.card img {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+    margin: 1rem 6em;
+    width: 9em;
+}
+
+.card-body > p > a {
+    text-decoration: none;
+}
+
+.card-body > p > a {
+    color: #fff;
+    border-color: var(--primary-blue);
+    background-color: var(--primary-blue);
+}
+
+.card-body > p > a:hover {
+    color: #fff;
+    border-color: #0b4791;
+    background-color: #0b4791;
+}
+
+/* Pagination */
+.pagination a {
+    text-decoration: none;
+    font-family: 'AzoSans', sans-serif;
+}
+.page-item.active .page-link {
+    z-index: 3;
+    color: var(--p-text-color);
+    background-color: var(--the-yellow);
+    border-color: var(--the-yellow);
+    font-family: 'AzoSans', sans-serif;
+
+}
+
+.page-link {
+    color: var(--the-yellow);
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+
+.page-link:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(247, 235, 6, 0.25);
+}
+
+a.page-link:hover {
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+}
+
+/* Review */
+.review-description {
+    padding-bottom: 20px;
+    border-bottom: 3px solid var(--the-yellow);
+}
+
+.review-meta p{
+    text-align: center;
+    font-size: 1em;
+    font-family: 'AzoSans', sans-serif;
+}
+
+.review-meta span {
+    font-weight: bold;
+}
+
+.review-content p{
+    font-size: 1.3em;
+    padding-left: 60px;
+    padding-right: 60px;
+}
