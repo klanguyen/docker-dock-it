@@ -1,0 +1,177 @@
+/*
+Theme Name:     Zakra-child
+Theme URI:
+Description:    Zakra child theme.
+Author:         Me
+Author URI:
+Template:       zakra
+Version:        0.1.0
+*/
+
+span.brief-desc {
+	font-size: 1rem;
+	margin-bottom: 10px;
+}
+
+h2.project-title {
+	font-size: 1.5rem;
+}
+
+p.brief-desc {
+	font-size: 1.3rem;
+	margin-bottom: 10px;
+}
+
+.action-links {
+	margin-bottom: 1rem;
+}
+
+a.btn-link.github-btn {
+	background-color: rgba(0, 0, 0, 0.1);
+	color: #000;
+	font-size: 18px;
+	display: inline-block;
+	flex-wrap: wrap;
+	align-items: center;
+	line-height: 1;
+	text-align: center;
+	text-decoration: none;
+	transition: all 200ms;
+	border-radius: 2px;
+	cursor: pointer;
+	padding: 10px 15px;
+	margin: 10px 10px 10px 0;
+}
+
+a.btn-link.github-btn:hover {
+	background-color: gold;
+	color: black;
+}
+
+a.btn-link.live-btn {
+	font-size: 18px;
+	color: black;
+	transform: translate(-50%,-50%);
+	background-image: linear-gradient(gold, gold);
+	background-size: 100% 5px;
+	background-repeat: no-repeat;
+	background-position: 100% 0%;
+	transition: background-size .7s, background-position .5s ease-in-out;
+	margin: 10px 10px 10px 0;
+	padding: 10px 15px;
+}
+
+a.btn-link.live-btn:hover {
+	background-size: 100% 100%;
+	background-position: 0% 100%;
+	transition: background-position .7s, background-size .5s ease-in-out;
+}
+
+h2.project-subtitles {
+	margin-bottom: 0.5rem;
+	line-height: 1.2;
+	border-bottom: 3px solid gold;
+	width: auto;
+	display: inline-block;
+}
+
+.technologies-list {
+	display: flex;
+	flex-flow: row wrap;
+	font-size: 14px;
+	margin: 20px 0 0 0;
+	padding: 0;
+	justify-content: flex-start;
+}
+
+.tech-item {
+	color: #000;
+	display: inline-block;
+	background: rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+	padding: 2.5px 10px;
+	margin: 0 5px 5px 0;
+	cursor: default;
+	user-select: none;
+	transition: background-color 0.3s;
+
+	&:hover {
+		background-color: gold;
+	}
+}
+
+img.project-screenshot {
+	border-radius: 5px;
+	margin: 20px 15px 15px 0;
+
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+
+.modal-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+
+	display: none;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	height: 100%;
+
+	background: hsla(0, 0%, 0%, .8);
+
+	&:target {
+		display: flex;
+	}
+}
+
+.modal {
+	color: gold;
+	width: 60rem;
+	padding: 4rem 2rem;
+	border-radius: .8rem;
+	position: relative;
+
+	overflow: hidden;
+}
+
+.modal span {
+	margin: 1rem;
+}
+
+.modal-content {
+	padding: 0 4rem;
+	margin-bottom: 4rem;
+}
+
+.close-btn {
+	width: 2rem;
+	height: 2rem;
+	font-size: 2.2rem;
+
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	transition: .2s;
+
+	&::before {
+		color: #ccc;
+		content: '×';
+
+		transform: translateY(-.1rem);
+	}
+
+	&:hover, &:focus {
+		border-color: hsla(0, 0%, 100%, .6);
+		transform: translateY(-.2rem);
+	}
+}
