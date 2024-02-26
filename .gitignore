@@ -22,5 +22,9 @@
 
 # … except our stuff.
 !/wordpress/wp-content/plugins/mailhog.php
+!/wordpress/wp-content/plugins/high-pulp-blocks
+!/wordpress/wp-content/plugins/advanced-custom-fields
+!/wordpress/wp-content/plugins/navz-photo-gallery
 !/wordpress/wp-content/themes/zakra
+!/wordpress/wp-content/themes/zakra-child
 
